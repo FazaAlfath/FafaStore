@@ -1,0 +1,166 @@
+h3{
+    margin: 0 !important;
+}
+
+.wrapper{
+    display: flex;
+}
+
+aside{
+    width: 250px;
+    background: #222;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    box-shadow: 5px 0 10px rgba(0,0,0,0.1);
+}
+
+aside h3{
+    color: #ddd;
+    font-weight: 900;
+    padding: 25px 0;
+    padding-left: 40px;
+    background: #000;
+}
+
+aside ul a{
+    color: #eee;
+    font-size: 14pt;
+    display: block;
+    padding: 18px 0;
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+aside ul a i{
+    margin-left: 15px;
+    transition: all ease 0.5s;
+}
+
+aside ul a > ul{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+aside ul a > ul li{
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+aside ul a:hover{
+    color: #eee;
+    text-decoration: none;
+    background: #111;
+}
+
+aside ul{
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+aside img{
+    width: 40px;
+    position: absolute;
+    top: 332px;
+    left: 130px;
+    z-index: 3;
+}
+
+aside ul a > ul:hover .pop-logout{
+    display: inline-block;
+}
+
+#content{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin-left: 250px;
+    overflow-x: auto;
+}
+
+#content table{
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    border-radius: 4px;
+    width: 1800px;
+}
+
+#content table thead{
+    border-bottom: 1.5px solid #ddd;
+}
+
+#content table th{
+    padding: 0 20px;
+    line-height: 55px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+#content table td{
+    font-size: 10pt;
+    padding: 0 10px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+#form-wrap-admin{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-wrap-admin form{
+    border-radius: 4px;
+    background: #fff;
+    width: 350px;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#form-wrap-admin form .card-header{
+    background-color: #222;
+    padding: 10px 20px;
+    font-size: 12pt;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: left;
+    border-radius: 4px 4px 0 0;
+}
+
+#form-wrap-admin form input,label, button{
+    margin: 0 20px;
+    width: 310px;
+    text-align: left;
+}
+
+#form-wrap-admin form button{
+    background: #222;
+    color: #fff;
+}
+
+
+/* JS Script Class */
+
+.show-admin-logged{
+    height: 55px;
+}
+
+.rotate-caret-i{
+    transform: rotateZ(180deg);
+}
+
+.a-action{
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+}
+

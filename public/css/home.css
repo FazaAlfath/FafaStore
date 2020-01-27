@@ -1,0 +1,218 @@
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.container{
+    padding-top: 40px;
+}
+
+header{
+    box-shadow: 0 -4px 10px 1px rgba(0,0,0,0.1);
+    padding: 18px 50px;
+    background: #3b66e9;;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+header h3{
+    width: 100%;
+    color: #ddd;
+}
+header ul{
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 11pt;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+#content .intro-home{
+    background-color: #4e73df;
+    
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+#content .preview-title{
+    width: 40%;
+    padding: 20px;
+    color: #ddd;
+}
+
+#content .preview-desc{
+    padding: 20px;
+    width: 40%;
+    color: #ddd;
+}
+
+#list-product{
+    margin: 20px auto;
+}
+
+#list-product .card-product{
+    height: 250px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px 0;
+    background: url(../img/Nike-jordanPF.png) no-repeat ;
+    background-size: cover;
+    background-position: 20px -30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#list-product .desc-product{
+    background-color: rgba(2,2,2,0.5);
+    width: 100%;
+    height: 105px;
+    padding: 10px 20px; 
+    color: #eee;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#list-product .desc-product h3{
+    margin-bottom: 10px;
+}
+
+body{
+    background-size: cover;
+}
+
+#card-detail{
+    opacity: 0.5    ;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    background: #222;
+    color: #ddd;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+#card-detail .image-preview{
+    width: 450px;
+    height: 350px;
+    background: #eee;
+}
+
+#card-detail h2{
+    color: #fff;
+}
+
+#card-detail ul{
+    list-style: none;
+}
+
+#card-detail li{
+    font-size: 15pt;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    width: 600px;
+}
+
+#card-detail li:nth-child(5){
+    font-size: 12pt;
+    color: #aaa;
+}
+
+        /* Footer */
+
+footer{
+    background: #3b66e9;
+    padding-top: 15px;
+}
+
+footer #footer-info{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+} 
+
+footer #footer-info ul h4{
+    font-size: 16pt;
+    color: #ddd;
+}
+
+footer #footer-info ul a{
+    text-align: left;
+    display: block;
+    margin-left: 12px;
+    color: white;
+}
+
+footer #footer-cop{
+    border-top: 2px solid white;
+    margin-top: 12px;
+    color: #ddd;
+    line-height: 58px;
+    font-size: 12pt;
+}
+
+        /* End-Footer */
+
+#modal-order{
+    display: none;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-order .form-modal-order{
+    width: 750px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 4px;
+    /* height: 300px; */
+    background: #fff;
+}
+
+button[type="submit"]{
+    border-radius: 2px !important;
+}
+
+#modal-order .form-modal-order .close-modal{
+    border: 0;
+    background: transparent;
+    position: relative;
+    font-weight: 900;
+    float: right;
+    top: -20px;
+    right: -20px;
+    font-size: 14pt;
+}
+
+@media screen and (max-width: 768px){
+    #content .intro-home{
+        display: block;
+        padding: 120px 20px;
+    }
+
+    #content .preview-title{
+        width: 100%;
+    }
+
+    #content .preview-desc{
+        width: 100%;
+    }
+}
