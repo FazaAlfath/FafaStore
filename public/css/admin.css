@@ -147,6 +147,53 @@ aside ul a > ul:hover .pop-logout{
     color: #fff;
 }
 
+#modal-order{
+    display: none;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-order .form-modal-order{
+    width: 550px;
+    box-sizing: border-box;
+    padding: 25px;
+    border-radius: 4px;
+    /* height: 300px; */
+    background: #fff;
+}
+
+#modal-order .form-modal-order label{
+    margin-left: 0px;
+    margin-top: -20px;
+}
+
+button[type="submit"]{
+    border-radius: 2px !important;
+}
+
+#modal-order .form-modal-order .close-modal{
+    border: 0;
+    background: transparent;
+    position: relative;
+    font-weight: 900;
+    float: right;
+    top: -20px;
+    right: -300px;
+    font-size: 14pt;
+}
+
+table tbody td a.btn-danger,#hapus.btn{
+    background-color: red !important;
+    color: #fff;
+}
+
 
 /* JS Script Class */
 
@@ -163,4 +210,3 @@ aside ul a > ul:hover .pop-logout{
     color: #fff;
     text-decoration: none;
 }
-

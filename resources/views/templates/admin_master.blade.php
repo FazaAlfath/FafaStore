@@ -7,7 +7,6 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/app.css">
-    
     <title>@yield( 'tab-title' )</title>
 </head>
 <body>
@@ -72,6 +71,19 @@
     td.addEventListener('click', function(el){
         el.target.tagName = "input";
         // console.log(el);
+    });
+
+    const modalOrder = document.querySelector('#modal-order');
+    const btnModalOrder = document.querySelector('a#edit');
+    const btnCloseModal = document.querySelector('button.close-modal');
+
+    btnModalOrder.addEventListener('click', function(){
+        modalOrder.style.display = "flex";
+    });
+
+    btnCloseModal.addEventListener('click', function(e){
+        e.preventDefault();
+        modalOrder.style.display = "none";
     });
 
 </script>

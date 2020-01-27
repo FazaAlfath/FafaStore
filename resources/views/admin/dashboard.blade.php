@@ -25,8 +25,6 @@
             </thead>
             <tbody>
 
-        @if( isset( $orders ) )
-
             @foreach( $orders as $order )
 
                 <tr>
@@ -43,25 +41,71 @@
                     <td>{{ $order->Size }}</td>
                     <td>Rp. {{ $order->total_harga }}</td>
                     <td>
-                        <a id="edit" data-toggle="modal" data-target="#exampleModal" class="btn btn-success">Edit</a>
+                        <a id="edit" id="btnModalOrder" class="btn btn-success">Edit</a>
                     </td>
                     <td>
-                        <a href="" id="hapus" class="btn btn-danger">Hapus</a>
+                        <a href="/delete/{{ $order->id }}" id="hapus" class="btn">Hapus</a>
                     </td>
                 </tr>
-                
                 @endforeach
-                
-                @else
-                <?php header('Location: /login/admin') ?>
-                @endif
-                
             </tbody>
         </table>
 
     </div>
 
-  
-    
+    <div id="modal-order">
+
+        <form class="form-modal-order form-row" action="/order/post" method="post">
+
+            <button class="close-modal" >X</button>
+
+
+            <div class="col-md-12">
+                <label for="nama-lengkap">Nama Lengkap</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+
+            <div class="col-md-12">
+                <label for="nama-lengkap">Alamat Email</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+
+            <div class="col-md-12">
+                <label for="nama-lengkap">Nomor Telepon</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+
+            <div class="col-md-12">
+                <label for="nama-lengkap">Jumlah item</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+
+            <div class="col-md-12">
+                <label for="nama-lengkap">Alamat Pengiriman</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+            <div class="col-md-12">
+                <label for="nama-lengkap">Nama Barang</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+            <div class="col-md-12">
+                <label for="nama-lengkap">Jenis Produk</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+            <div class="col-md-12">
+                <label for="nama-lengkap">Harga Produk</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+            <div class="col-md-12">
+                <label for="nama-lengkap">Size</label>
+                <input type="text" name="nama_lengkap" class="form-control" placeholder="*Wajib Di isi" id="nama-lengkap" autocomplete="off" required><br>
+            </div>
+
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-primary form-control">Order</button>
+            </div>
+
+        
+        </form>
 
 @stop

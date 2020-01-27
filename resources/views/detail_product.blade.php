@@ -72,7 +72,8 @@
 
             <div class="col-md-6">
                 <label for="nama-produk">Size</label><br>
-                <input type="number" name="Size" class="form-control" id="Size-produk" value="1" autocomplete="off" required><br>
+                <input type="number" name="size" class="form-control" id="Size-produk" value="1" min="1" max="100" autocomplete="off" required><br>
+                <span style="color: red" ><i>{{ $errors->first('size') }}</i></span>
             </div>
 
             <div class="col-md-6">

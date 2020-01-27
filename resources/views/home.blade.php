@@ -26,27 +26,6 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="/detail/{{ $data->id }}">
-                        <div class="card-product">
-                            <div class="desc-product">
-                                <h3>{{ $data->nama_produk }}</h3>
-                                {{ $data->keterangan_produk }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="/detail/{{ $data->id }}">
-                        <div class="card-product">
-                            <div class="desc-product">
-                                <h3>{{ $data->nama_produk }}</h3>
-                                {{ $data->keterangan_produk }}
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
             @endforeach
 
            

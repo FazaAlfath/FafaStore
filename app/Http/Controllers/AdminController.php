@@ -69,4 +69,10 @@ class AdminController extends Controller
         return redirect('/login-admin');
     }
 
+    public function delete(){
+
+        DB::table('customers_order')->whereId(request('id'))->delete();
+        return back();
+    }
+
 }
